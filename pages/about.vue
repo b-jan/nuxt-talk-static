@@ -2,7 +2,7 @@
   <section class="container">
     <div>
       <AppLogo/>
-      <h1 class="mui--text-display1">Homepage</h1>
+      <h1 class="mui--text-display1">About Page</h1>
       <h1 class="mui--text-display1">(Nuxt generate website)</h1>
       <h2 class="headline">Rendered From:<span class="render-result">{{renderSource}}</span></h2>
       <button
@@ -19,7 +19,7 @@
   import AppLogo from '~/components/AppLogo.vue'
 
   export default {
-    asyncData () {
+    async asyncData () {
       return {
         renderSource: process.static ? 'static' : (process.server ? 'server' : 'client')
       }

@@ -1,7 +1,4 @@
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'nuxt-static',
     meta: [
@@ -10,16 +7,15 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: "stylesheet", href: "https://fonts.googleapis.com/css?family=Roboto" },
+      { rel: "stylesheet", href: "https://cdn.muicss.com/mui-0.9.35/css/mui.min.css" }
     ]
   },
-  /*
-  ** Customize the progress bar color
-  */
   loading: { color: '#3B8070' },
-  /*
-  ** Build configuration
-  */
+  css: [
+    { src: "@/assets/styles/main.css", lang: "css" }
+  ],
   build: {
     /*
     ** Run ESLint on save
